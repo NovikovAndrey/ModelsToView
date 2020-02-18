@@ -1,0 +1,18 @@
+﻿@using Collection.Model
+@model IEnumerable<Game>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+@foreach(var g in Model)
+{
+<p>@g.Name</p>
+<p>@g.Paltform</p>
+<p>@g.Engine</p>
+}
+</body>
+</html>
